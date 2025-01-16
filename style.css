@@ -53,7 +53,7 @@ nav a:last-child {
     padding: 50px 20px;
 }
 
-.scroll-text {
+.scroll-text h1 {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.5;
@@ -87,7 +87,7 @@ nav a:last-child {
     text-align: center;
 }
 
-h1 {
+.hero h1 {
     font-size: 3em;
     font-weight: bold;
     margin: 0 0 20px;
@@ -230,4 +230,181 @@ footer {
 
 .social-links a.beta:hover {
     --bg-color: var(--four);
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 1.1em;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    .scroll-text {
+        font-size: 2.2rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .about-me-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .divider {
+        margin: 20px 0;
+    }
+
+    .case-study-content {
+        max-width: 100%;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .case-study-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .case-study-content {
+        width: 100%;
+        max-width: 400px;
+        padding: 0 15px;
+    }
+
+    .case-study-image {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .case-study-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+    }
+
+    .view-box {
+        display: inline-block;
+        font-size: 1em;
+        padding: 10px 15px;
+        margin-top: 15px;
+        background-color: var(--bg-color);
+        color: var(--third);
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    .contact h2, .contact .email {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .social-links a {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+    header {
+        padding: 30px 60px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    nav a {
+        font-size: 40px;
+    }
+
+    .scroll-text h1{
+        font-size: 50px;
+    }
+
+    .hero h1 {
+        font-size: 150px;
+    }
+
+    .about-me-image img {
+        width: 800px;
+        height: 600px;
+    }
+
+    .case-study-content h2 {
+        font-size: 2.5em;
+    }
+
+    .case-study-content p {
+        font-size: 1.2em;
+    }
+
+    .view-box {
+        font-size: 1.1em;
+        padding: 15px 25px;
+    }
+
+    .case-study-image img {
+        width: 500px;
+    }
+
+    footer {
+        padding: 50px;
+        font-size: 1.2em;
+    }
+
+    .contact h2, .contact .email {
+        font-size: 2.5rem;
+    }
+
+    .social-links a {
+        font-size: 2rem;
+        padding: 15px 30px;
+    }
 }
